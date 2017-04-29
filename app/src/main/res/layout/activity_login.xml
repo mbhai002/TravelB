@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bp2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mohamed.travelb.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="12"
+        android:id="@+id/etUsername"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorAccent"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_marginBottom="9dp"
+        android:layout_alignRight="@+id/btnRemove"
+        android:layout_alignEnd="@+id/btnRemove" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorAccent"
+        android:layout_above="@+id/btnRemove"
+        android:layout_alignLeft="@+id/btnRemove"
+        android:layout_alignStart="@+id/btnRemove"
+        android:layout_marginBottom="12dp"
+        android:layout_alignRight="@+id/btnRemove"
+        android:layout_alignEnd="@+id/btnRemove" />
+
+    <Button
+        android:text="LOG IN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRemove"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/tvLinktoRegister"
+        android:layout_alignLeft="@+id/tvLinktoRegister"
+        android:layout_alignStart="@+id/tvLinktoRegister"
+        android:layout_marginBottom="19dp"
+        android:layout_alignRight="@+id/tvLinktoRegister"
+        android:layout_alignEnd="@+id/tvLinktoRegister" />
+
+    <TextView
+        android:text="Not a member? Click here to register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLinktoRegister"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/tb2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="travel buddy"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

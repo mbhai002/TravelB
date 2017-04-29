@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mohamed.travelb.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="12"
+        android:id="@+id/etName"
+        android:hint="Full name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="12"
+        android:id="@+id/etDob"
+        android:hint="YYYY-MM-DD"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/etName"
+        android:layout_alignStart="@id/etName" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/etDob"
+        android:entries="@array/gender"
+        android:id="@+id/gSpinner"
+        android:layout_below="@+id/etDob"
+        android:layout_alignEnd="@+id/etDob">
+    </Spinner>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="12"
+        android:id="@+id/gender"
+        android:hint="Email Address"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@id/etDob"
+        android:layout_below="@id/gSpinner"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="12"
+        android:id="@+id/etUsername"
+        android:hint="Username"
+        android:layout_below="@id/gender"
+        android:layout_alignStart="@+id/gender"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignStart="@+id/etUsername" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:id="@+id/etPasswordAgain"
+        android:layout_marginBottom="10dp"
+        android:hint="Re-enter password"
+        android:layout_below="@id/etPassword"
+        android:layout_alignStart="@+id/etPassword"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbTerms"
+        android:layout_below="@+id/etPasswordAgain"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_alignStart="@+id/etPasswordAgain" />
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="20px"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/etPasswordAgain"
+        android:layout_alignEnd="@+id/etPasswordAgain"
+        android:layout_toEndOf="@+id/cbTerms" />
+
+
+    <Button
+        android:text="REGISTER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/tvTerms"
+        android:layout_alignStart="@+id/cbTerms"
+        android:layout_alignEnd="@+id/etPasswordAgain" />
+
+</RelativeLayout>
