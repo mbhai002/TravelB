@@ -35,7 +35,8 @@
         <activity android:name=".Send_message" />
         <activity android:name=".send_message" />
         <activity android:name=".MessageDtails" />
-        <activity android:name=".remove"></activity>
+        <activity android:name=".remove" />
+        <activity android:name=".messageMenu"></activity>
     </application>
 
 </manifest>

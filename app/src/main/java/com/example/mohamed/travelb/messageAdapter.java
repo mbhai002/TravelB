@@ -44,6 +44,7 @@ public class messageAdapter extends RecyclerView.Adapter<messageAdapter.ContactV
         Message CON =  contacts.get(position);
         holder.person_img.setImageResource(CON.getImage_id());
         holder.person_username.setText(CON.getUsername());
+        holder.dater.setText(CON.getDater());
 
 
     }
@@ -56,7 +57,7 @@ public class messageAdapter extends RecyclerView.Adapter<messageAdapter.ContactV
     public static class ContactViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener{
 
         ImageView person_img;
-        TextView person_username, person_dob, person_gender,person_date;
+        TextView person_username, person_dob, person_gender,person_date,dater;
         ArrayList<Message> contacts=new ArrayList<Message>();
         Context ctx;
 
@@ -73,6 +74,7 @@ public class messageAdapter extends RecyclerView.Adapter<messageAdapter.ContactV
             person_dob=(TextView) view.findViewById(R.id.name);
             person_gender=(TextView) view.findViewById(R.id.gender);
             person_date=(TextView) view.findViewById(R.id.date);
+            dater=(TextView) view.findViewById(R.id.date_r);
 
         }
 
@@ -83,6 +85,10 @@ public class messageAdapter extends RecyclerView.Adapter<messageAdapter.ContactV
             Message contact= this.contacts.get(position);
             Intent intent =new Intent(ctx,MessageDtails.class);
             intent.putExtra("content",contact.getContent());
+            intent.putExtra("myid",contact.getMy_id());
+            intent.putExtra("sender",contact.getSender());
+
+
 
             this.ctx.startActivity(intent);
 

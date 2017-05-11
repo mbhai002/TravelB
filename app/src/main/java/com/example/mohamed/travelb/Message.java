@@ -8,11 +8,11 @@ public class Message {
 
 
     private int image_id;
-    private String User_id,Email,Gender,Name,Dob,Password,Username,Idmess,Content,Sender,Receiver;
+    private String User_id,Email,Gender,Name,Dob,Password,Username,Idmess,Content,Sender,Receiver,DateR;
     String my_id;
 
     public Message(int image_id, String user_id, String email, String gender, String name, String dob, String password,
-                   String username, String idmess, String content, String sender, String receiver, String my_id) {
+                   String username, String idmess, String content, String sender, String receiver, String my_id,String dateR) {
         this.image_id = image_id;
         User_id = user_id;
         Email = email;
@@ -25,6 +25,7 @@ public class Message {
         Content = content;
         Sender = sender;
         Receiver = receiver;
+        DateR=dateR;
         this.my_id = my_id;
     }
 
@@ -131,6 +132,14 @@ public class Message {
 
     public String getMy_id() {
         return my_id;
+    }
+
+    public void setDater(String dateR) {
+        DateR = dateR;
+    }
+
+    public String getDater() {
+        return DateR;
     }
 
     public void setMy_id(String my_id) {

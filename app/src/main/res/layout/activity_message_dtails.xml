@@ -20,12 +20,12 @@
         android:textColor="@color/colorAccent"
         android:textSize="22dp"
         android:textStyle="bold"
-        android:layout_marginBottom="50dp"
-        android:layout_above="@+id/detail"
-        android:layout_toLeftOf="@+id/btnSend"
-        android:layout_toStartOf="@+id/btnSend"
-        android:layout_marginRight="20dp"
-        android:layout_marginEnd="20dp" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp" />
 
     <Button
         android:id="@+id/btnSend"
@@ -42,16 +42,32 @@
     <TextView
         android:id="@+id/detail"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
 
 
-        android:layout_above="@+id/btnSend"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
+        android:layout_marginTop="9dp"
         android:background="#ffffff"
-        android:textSize="20dp"
-
         android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLength="140"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvWelcomeMsg"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/newmess"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+
+        android:layout_alignEnd="@+id/detail"
+        android:layout_alignLeft="@+id/detail"
+        android:layout_alignRight="@+id/detail"
+        android:layout_alignStart="@+id/detail"
+        android:layout_below="@+id/detail"
+        android:layout_marginTop="23dp"
+        android:background="#ffffff"
+        android:ems="50"
+        android:hint="      reply ..."
         android:inputType="textMultiLine"
         android:maxLength="140" />
 

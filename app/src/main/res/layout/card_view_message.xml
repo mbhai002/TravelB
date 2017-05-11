@@ -32,14 +32,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="21dp"
+
+
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/person_image"
+                android:layout_toRightOf="@+id/person_image"
                 android:text="rajmoham zerzer"
-
-
                 android:textColor="@color/colorAccent"
                 android:textSize="30dp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/username"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:text="TextView" />
 
 
         </RelativeLayout>

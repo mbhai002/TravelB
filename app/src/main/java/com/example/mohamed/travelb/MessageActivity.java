@@ -55,6 +55,7 @@ public class MessageActivity extends AppCompatActivity {
     String JSON_CONTENT="content";
     String JSON_SENDER="sender";
     String JSON_RECEIVER="receiver";
+    String JSON_DATER="date";
 
 
 
@@ -177,6 +178,7 @@ public class MessageActivity extends AppCompatActivity {
                 contact.setContent(json.getString(JSON_CONTENT));
                 contact.setSender(json.getString(JSON_SENDER));
                 contact.setReceiver(json.getString(JSON_RECEIVER));
+                contact.setDater(json.getString(JSON_DATER));
 
 
                 // Log.d("JSON_PHONENUMBER",JSON_PHONE_NUMBER);
@@ -195,6 +197,7 @@ public class MessageActivity extends AppCompatActivity {
                 String JSON_CONTENT="content";
                 String JSON_SENDER="sender";
                 String JSON_RECEIVER="reveiver";
+                String JSON_DATER="date";
                 contact.setImage_id(R.drawable.a);
 
 
