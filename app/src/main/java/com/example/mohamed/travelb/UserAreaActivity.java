@@ -66,8 +66,9 @@ public class UserAreaActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent messageIntent = new Intent(UserAreaActivity.this, MessageActivity.class);
-                messageIntent.putExtra("my_id",id+"");
+                Intent messageIntent = new Intent(UserAreaActivity.this, messageMenu.class);
+                messageIntent.putExtra("user_id",id+"");
+                Log.d("id userAreaActivity",id+"");
                 UserAreaActivity.this.startActivity(messageIntent);
             }
         });

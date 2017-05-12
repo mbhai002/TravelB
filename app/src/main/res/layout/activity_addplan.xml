@@ -5,7 +5,6 @@
     android:id="@+id/activity_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2e3237"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -56,22 +55,26 @@
         android:onClick="setDate"
         android:text="@string/date_button_set"
         android:textColor="#ffffff"
-        android:layout_marginBottom="30dp"
         android:background="@color/colorAccent"
         android:layout_above="@+id/bRegister"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="200dp"
+
+
+
         android:text="@string/date_selected"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_marginBottom="104dp"
-        android:textColor="#ffffff"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignStart="@+id/button1" />
+        android:textColor="@color/colorAccent"
+
+         />
 
     <TextView
         android:id="@+id/textView10"
@@ -80,9 +83,11 @@
         android:text="Date"
         android:textSize="15dp"
         android:textColor="@color/colorAccent"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_alignLeft="@+id/etName"
-        android:layout_alignStart="@+id/etName" />
+
+        android:layout_above="@+id/button1"
+        android:layout_toLeftOf="@+id/bRegister"
+        android:layout_toStartOf="@+id/bRegister"
+        android:layout_marginBottom="11dp" />
 
 
 </RelativeLayout>

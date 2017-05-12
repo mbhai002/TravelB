@@ -49,7 +49,7 @@ String date;
         Log.d("chicooooo",id+"");
 
 
-        dateView = (TextView) findViewById(R.id.textView3);
+        dateView = (TextView) findViewById(R.id.date);
         calendar = Calendar.getInstance();
         year = calendar.get(Calendar.YEAR);
 
